@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
 
 /* reset */
 
@@ -44,7 +44,12 @@ a{
     display: inline-block;
 }
 
+ul{
+    list-style:none;
+}
 /* Utility Class */
+
+
 .small-bold-text{
     font-size: 1rem;
     font-weight: 700
@@ -55,9 +60,120 @@ a{
     margin-inline: auto;
     padding-inline: var(--padding-inline-section)
 }
+.flex{
+    display: flex;
+    align-items: center;
+
+}
+
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important ;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.5s ease-out;
+}
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+.secondary-button{
+    background-color: white;
+    border: 2px solid var(--secondary-text-color);
+    border-radius: 4px; 
+    font-weight: 700;
+    padding: 9px 22px;
+    transition: 0.5s ease-out;
+}
+
+.secondary-button:hover{
+    background-color: var(--primary-text-color);
+    color: white !important;
+}
+/*Top - Banner */
+.top-banner{
+    background-color: aquamarine;
+    background-image: url('images/element1.png');
+    background-size: 300px;
+}
+
 
 .banner-text{
     /* color: white; */
     padding: 15px 30px;
     text-align: center;
+    
 }
+
+/* Nav Bar */
+.company-logo img{
+    width: 200px;
+    height: 40px;
+}
+
+.main-nav{
+    margin: 20px;
+    justify-content: space-between;
+}
+
+.nav-link{
+    flex-basis: 730px;
+}
+.nav-links ul{
+    justify-content: end;
+    gap: 40px;
+}
+
+.hover-link{
+    color: var(--primary-text-color);
+    transition: 0.5s ease-out;
+}
+
+.hover-link:hover{
+    color:var(--accent-color)
+}
+
+/* Header Sectin */
+header{
+    padding: 50px var(--padding-inline-section) 0;
+}
+
+.header-section{
+    justify-content: center;
+    gap: 30px
+}
+
+.header-left{
+    max-width: 40vw;
+}
+
+.header-left h1{
+    margin-top: 20px;
+}
+.get-started-button{
+    margin-top: 20px;
+}
+
+.header-right img{
+    width: 600px;
+}
+
+/* Company Section */
+.companies-header{
+    justify-content: center;
+    margin-block: 25px;
+}
+
+.logos{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 150px; 
+    height: 60px;
+ 
+}
+
