@@ -183,6 +183,7 @@ header{
    background-image: url("images/bg1.png");
    background-repeat: no-repeat;
    background-position: center;
+   margin-bottom: 10px;
 }
 
 .features-header{
@@ -213,8 +214,8 @@ header{
 /* big-features section -1 */
 
 .big-features-section{
-    padding: 50px var(--padding-inline-section) 0;
-    margin-top: 30px;
+    padding: 25px var(--padding-inline-section) 0;
+    
     
 }
 
@@ -239,3 +240,98 @@ header{
     height: 35px;
 }
 
+/* Example cards */
+.sub-text{
+    margin-top: 40px;
+}
+.example-area{
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.card-text{
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    color: white;
+}
+.example-card{
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    background: black;
+    background: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.8)),url("images/carousel1.jpg");
+    background-size: cover;
+    transition: 0.1s ease-out;
+    
+}
+
+.example-card:hover{
+    box-shadow: 0 0 10px #888;
+}
+
+.example-card:nth-child(2){
+    background: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.8)),url("images/carousel2.jpg");
+    background-size: cover;
+
+}
+
+.example-card:nth-child(3){
+    background: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.8)),url("images/carousel3.jpg");
+    background-size: cover;
+
+}
+
+.example-card:nth-child(4){
+    background: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.8)),url("images/carousel4.jpg");
+    background-size: cover;
+
+}
+
+/* cta-section */
+.cta-section{
+    padding: 100px var(--padding-inline-section) 80px;
+    margin-top: 25px;
+    background-color: #183b54;
+}
+.cta-container{
+    flex-direction:column;
+    gap: 20px;
+    color: white;
+   
+}
+.cta-par{
+    color: white;
+}
+/* footer section */
+
+.footer-section{
+    padding-block: 50px;
+    background-color: #ebf2fa;
+
+}
+
+.footer-container{
+    justify-content: space-between;
+}
+
+.footer-img-logo img{
+width: 200px;
+height: 40px;
+}
+.link-column{
+    flex-direction: column;
+    align-items: flex-start ;
+    gap:8px;
+}
+
+/*Sub-footer */
+.subfooter{
+    padding: 20px var(--padding-inline-section) 20px;
+    background-color: #b9cde4;
+}
+
+.subfooter-container{
+    justify-content: center;
+    gap: 20px;
+}
